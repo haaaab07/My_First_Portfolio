@@ -1,0 +1,48 @@
+/* Ensure both container tags are flexible boxes */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ensures the body takes the full height of the viewport */
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+/* Make article and aside take the appropriate widths */
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Optional: Basic styling for header and footer */
+header, footer {
+    background: #f1f1f1;
+    padding: 10px;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer p {
+    text-align: center;
+}
